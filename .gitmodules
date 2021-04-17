@@ -1,9 +1,12 @@
 [submodule "chss-app-game-client"]
 	path = chss-app-game-client
 	url = git@github.com:mikilukasik/chss-app-game-client.git
+	branch = master
 [submodule "chss-service-game-handler"]
 	path = chss-service-game-handler
 	url = git@github.com:mikilukasik/chss-service-game-handler.git
+	branch = master
 [submodule "chss-service-gateway"]
 	path = chss-service-gateway
 	url = git@github.com:mikilukasik/chss-service-gateway.git
+	branch = master
