@@ -9,7 +9,12 @@
     "chss-service-game-handler"
   ],
   "scripts": {
-    "postinstall": "submodules-install"
+    "start": "npm run start:gateway & npm run start:game-handler & npm run start:game-client",
+    "postinstall": "git submodule init && git submodule update && submodules-install",
+    "update": "git submodule foreach git pull origin master && submodules-install",
+    "start:gateway": "cd ./chss-service-gateway && npm start",
+    "start:game-handler": "cd ./chss-service-game-handler && npm start",
+    "start:game-client": "cd ./chss-app-game-client && npm run build && npm start"
   },
   "repository": {
     "type": "git",
