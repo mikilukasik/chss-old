@@ -10,7 +10,7 @@
   "scripts": {
     "start": "npm run start:gateway & npm run start:game-handler & npm run start:game-client",
     "postinstall": "git submodule update --init --recursive && git submodule foreach npm i",
-    "update-submodules": "git submodule foreach git pull origin master && git submodule foreach npm ci",
+    "update-submodules": "git submodule foreach git pull origin master && git submodule foreach npm i",
     "start:gateway": "cd ./chss-service-gateway && npm start",
     "start:game-handler": "cd ./chss-service-game-handler && npm start",
     "start:game-client": "cd ./chss-app-game-client && npm run build && npm start"
