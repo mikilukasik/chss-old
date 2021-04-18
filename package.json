@@ -13,7 +13,9 @@
     "update-submodules": "git submodule foreach git pull origin master && git submodule foreach npm i",
     "start:gateway": "cd ./chss-service-gateway && npm start",
     "start:game-handler": "cd ./chss-service-game-handler && npm start",
-    "start:game-client": "cd ./chss-app-game-client && npm run build && npm start"
+    "start:game-client": "cd ./chss-app-game-client && npm run build && npm start",
+    "pull:mongo": "docker pull mongo",
+    "start:mongo": "docker run --name chss-mongo -v $PWD/data:/data/db -p 27017:27017 -d mongo:latest"
   },
   "repository": {
     "type": "git",
