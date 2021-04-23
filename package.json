@@ -9,11 +9,16 @@
   ],
   "scripts": {
     "start": "npm run start:gateway & npm run start:game-handler & npm run start:game-client",
+    "dev": "npm run watch:gateway & npm run watch:game-handler & npm run watch:game-client",
     "postinstall": "git submodule update --init --recursive && git submodule foreach npm i",
-    "update-submodules": "git submodule foreach git pull origin master && git submodule foreach npm i",
+    "update-submodules": "git submodule foreach --recursive git pull origin master",
+    "install-submodules": "git submodule foreach --recursive npm i",
     "start:gateway": "cd ./chss-service-gateway && npm start",
+    "watch:gateway": "cd ./chss-service-gateway && npm run dev",
     "start:game-handler": "cd ./chss-service-game-handler && npm start",
+    "watch:game-handler": "cd ./chss-service-game-handler && npm run dev",
     "start:game-client": "cd ./chss-app-game-client && npm run build && npm start",
+    "watch:game-client": "cd ./chss-app-game-client && npm run dev",
     "pull:mongo": "docker pull mongo",
     "start:mongo": "docker run --name chss-mongo -v $PWD/data:/data/db -p 27017:27017 -d mongo:latest"
   },
@@ -27,6 +32,5 @@
     "url": "https://github.com/mikilukasik/chss/issues"
   },
   "homepage": "https://github.com/mikilukasik/chss#readme",
-  "devDependencies": {},
-  "dependencies": {}
+  "devDependencies": {}
 }
