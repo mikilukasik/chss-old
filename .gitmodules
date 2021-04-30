@@ -10,3 +10,6 @@
 	path = chss-service-gateway
 	url = git@github.com:mikilukasik/chss-service-gateway.git
 	branch = master
+[submodule "chss-service-logger"]
+	path = chss-service-logger
+	url = https://github.com/mikilukasik/chss-service-logger
