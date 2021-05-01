@@ -1,15 +1,18 @@
 [submodule "chss-app-game-client"]
 	path = chss-app-game-client
-	url = git@github.com:mikilukasik/chss-app-game-client.git
-	branch = master
+	url = https://github.com/mikilukasik/chss-app-game-client
 [submodule "chss-service-game-handler"]
 	path = chss-service-game-handler
-	url = git@github.com:mikilukasik/chss-service-game-handler.git
-	branch = master
+	url = https://github.com/mikilukasik/chss-service-game-handler
 [submodule "chss-service-gateway"]
 	path = chss-service-gateway
-	url = git@github.com:mikilukasik/chss-service-gateway.git
-	branch = master
+	url = https://github.com/mikilukasik/chss-service-gateway
 [submodule "chss-service-logger"]
 	path = chss-service-logger
 	url = https://github.com/mikilukasik/chss-service-logger
+[submodule "chss-module-logger"]
+	path = chss-module-logger
+	url = https://github.com/mikilukasik/chss-module-logger
+[submodule "chss-module-engine"]
+	path = chss-module-engine
+	url = https://github.com/mikilukasik/chss-module-engine

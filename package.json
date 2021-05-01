@@ -3,16 +3,12 @@
   "version": "0.0.1",
   "description": "A chess pet project",
   "main": "index.js",
-  "submodules": [
-    "chss-service-gateway",
-    "chss-service-game-handler"
-  ],
   "scripts": {
     "start": "npm run start:gateway & npm run start:game-handler & npm run start:logger & npm run start:game-client",
     "dev": "npm run watch:gateway & npm run watch:game-handler & npm run watch:logger & npm run watch:game-client",
-    "postinstall": "git submodule update --init --recursive && git submodule foreach npm i",
-    "update-submodules": "git submodule foreach --recursive git pull origin master",
-    "install-submodules": "git submodule foreach --recursive npm ci",
+    "postinstall": "# git submodule update --init && # git submodule foreach npm ci",
+    "update-submodules": "# git submodule foreach git pull origin master",
+    "install-submodules": "# git submodule foreach npm ci",
     "start:gateway": "cd ./chss-service-gateway && npm start",
     "watch:gateway": "cd ./chss-service-gateway && npm run dev",
     "start:game-handler": "cd ./chss-service-game-handler && npm start",
