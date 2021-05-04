@@ -16,3 +16,6 @@
 [submodule "chss-module-engine"]
 	path = chss-module-engine
 	url = https://github.com/mikilukasik/chss-module-engine
+[submodule "chss-service-auth"]
+	path = chss-service-auth
+	url = https://github.com/mikilukasik/chss-service-auth
