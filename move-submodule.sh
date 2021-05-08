@@ -40,17 +40,17 @@ ln -s -- "$sharedproject" "$project"
 sharedproject="${PWD}/chss-module-engine"
 
 project="${PWD}/chss-app-game-client"
-rm -rf "${project}/msg"
+rm -rf "${project}/chss-module-engine"
 ln -s -- "$sharedproject" "$project"
 
 project="${PWD}/chss-service-game-handler"
-rm -rf "${project}/msg"
+rm -rf "${project}/chss-module-engine"
 ln -s -- "$sharedproject" "$project"
 
 sharedproject="${PWD}/chss-module-logger"
 
 project="${PWD}/chss-app-game-client"
-rm -rf "${project}/msg"
+rm -rf "${project}/chss-module-logger"
 ln -s -- "$sharedproject" "$project"
 
 
