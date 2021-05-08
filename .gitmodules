@@ -19,3 +19,6 @@
 [submodule "chss-service-auth"]
 	path = chss-service-auth
 	url = https://github.com/mikilukasik/chss-service-auth
+[submodule "msg"]
+	path = msg
+	url = https://github.com/mikilukasik/msg
