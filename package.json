@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm run start:gateway & npm run start:game-handler & npm run start:logger & npm run start:auth & npm run start:game-client",
     "dev": "npm run watch:gateway & npm run watch:game-handler & npm run watch:logger & npm run watch:auth & npm run watch:game-client",
-    "postinstall": "# git submodule update --init && # git submodule foreach npm ci",
+    "postinstall": "git submodule update --init && git submodule foreach npm i",
     "update-submodules": "git submodule foreach --recursive git pull origin master",
     "install-submodules": "git submodule foreach --recursive npm ci",
     "start:gateway": "cd ./chss-service-gateway && npm start",
