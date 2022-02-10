@@ -25,3 +25,6 @@
 [submodule "chss-service-task-manager"]
 	path = chss-service-task-manager
 	url = git@github.com:mikilukasik/chss-service-task-manager.git
+[submodule "chss-service-model-store"]
+	path = chss-service-model-store
+	url = git@github.com:mikilukasik/chss-service-model-store.git

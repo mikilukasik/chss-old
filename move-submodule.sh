@@ -1,5 +1,9 @@
 sharedproject="${PWD}/msg"
 
+  project="${PWD}/chss-service-model-store"
+  rm -rf "${project}/msg"
+  ln -s -- "$sharedproject" "$project"
+
   project="${PWD}/chss-service-task-manager"
   rm -rf "${project}/msg"
   ln -s -- "$sharedproject" "$project"
