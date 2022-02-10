@@ -4,8 +4,8 @@
   "description": "A chess pet project",
   "main": "index.js",
   "scripts": {
-    "start": "npm run start:gateway & npm run start:game-handler & npm run start:logger & npm run start:auth & npm run start:game-client",
-    "dev": "npm run watch:gateway & npm run watch:game-handler & npm run watch:logger & npm run watch:auth & npm run watch:game-client",
+    "start": "npm run start:gateway & npm run start:task-manager & npm run start:game-handler & npm run start:logger & npm run start:auth & npm run start:game-client",
+    "dev": "npm run watch:gateway & npm run watch:task-manager & npm run watch:game-handler & npm run watch:logger & npm run watch:auth & npm run watch:game-client",
     "postinstall": "git submodule update --init && git submodule foreach npm i",
     "update-submodules": "git submodule foreach --recursive git pull origin master",
     "install-submodules": "git submodule foreach --recursive npm ci",
@@ -21,7 +21,9 @@
     "watch:game-client": "cd ./chss-app-game-client && npm run dev",
     "pull:mongo": "docker pull mongo",
     "start:mongo": "docker run --name chss-mongo -v $PWD/data:/data/db -p 27017:27017 -d mongo:latest",
-    "add:new-service": "./scripts/add-new-service.sh"
+    "add:new-service": "./scripts/add-new-service.sh",
+    "start:task-manager": "cd ./chss-service-task-manager && npm start",
+    "watch:task-manager": "cd ./chss-service-task-manager && npm run dev"
   },
   "repository": {
     "type": "git",

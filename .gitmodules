@@ -22,3 +22,6 @@
 [submodule "msg"]
 	path = msg
 	url = https://github.com/mikilukasik/msg
+[submodule "chss-service-task-manager"]
+	path = chss-service-task-manager
+	url = git@github.com:mikilukasik/chss-service-task-manager.git
