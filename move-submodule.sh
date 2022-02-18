@@ -1,5 +1,9 @@
 sharedproject="${PWD}/msg"
 
+  project="${PWD}/chss-service-learner"
+  rm -rf "${project}/msg"
+  ln -s -- "$sharedproject" "$project"
+
   project="${PWD}/chss-service-model-store"
   rm -rf "${project}/msg"
   ln -s -- "$sharedproject" "$project"
@@ -29,6 +33,10 @@ sharedproject="${PWD}/msg"
   ln -s -- "$sharedproject" "$project"
 
 sharedproject="${PWD}/chss-module-engine"
+
+  project="${PWD}/chss-service-learner"
+  rm -rf "${project}/chss-module-engine"
+  ln -s -- "$sharedproject" "$project"
 
   project="${PWD}/chss-app-game-client"
   rm -rf "${project}/chss-module-engine"
