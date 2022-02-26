@@ -31,3 +31,6 @@
 [submodule "chss-service-learner"]
 	path = chss-service-learner
 	url = git@github.com:mikilukasik/chss-service-learner.git
+[submodule "chss-service-workers"]
+	path = chss-service-workers
+	url = git@github.com:mikilukasik/chss-service-workers.git

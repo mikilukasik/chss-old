@@ -1,5 +1,9 @@
 sharedproject="${PWD}/msg"
 
+  project="${PWD}/chss-service-workers"
+  rm -rf "${project}/msg"
+  ln -s -- "$sharedproject" "$project"
+
   project="${PWD}/chss-service-learner"
   rm -rf "${project}/msg"
   ln -s -- "$sharedproject" "$project"
@@ -33,6 +37,10 @@ sharedproject="${PWD}/msg"
   ln -s -- "$sharedproject" "$project"
 
 sharedproject="${PWD}/chss-module-engine"
+
+  project="${PWD}/chss-service-workers"
+  rm -rf "${project}/chss-module-engine"
+  ln -s -- "$sharedproject" "$project"
 
   project="${PWD}/chss-service-learner"
   rm -rf "${project}/chss-module-engine"
