@@ -42,5 +42,7 @@
     "url": "https://github.com/mikilukasik/chss/issues"
   },
   "homepage": "https://github.com/mikilukasik/chss#readme",
-  "devDependencies": {}
+  "dependencies": {
+    "nodemon": "^2.0.15"
+  }
 }
