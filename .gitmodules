@@ -34,3 +34,6 @@
 [submodule "chss-service-workers"]
 	path = chss-service-workers
 	url = git@github.com:mikilukasik/chss-service-workers.git
+[submodule "chss-service-engine"]
+	path = chss-service-engine
+	url = https://github.com/mikilukasik/chss-service-engine
