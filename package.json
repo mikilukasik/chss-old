@@ -4,8 +4,8 @@
   "description": "A chess pet project",
   "main": "index.js",
   "scripts": {
-    "start": "npm run start:gateway & npm run start:workers & npm run start:learner & npm run start:model-store & npm run start:task-manager & npm run start:game-handler & npm run start:logger & npm run start:auth & npm run start:game-client",
-    "dev": "npm run watch:gateway & npm run watch:workers & npm run watch:learner & npm run watch:model-store & npm run watch:task-manager & npm run watch:game-handler & npm run watch:logger & npm run watch:auth & npm run watch:game-client",
+    "start": "npm run start:gateway & npm run start:engine & npm run start:workers & npm run start:learner & npm run start:model-store & npm run start:task-manager & npm run start:game-handler & npm run start:logger & npm run start:auth & npm run start:game-client",
+    "dev": "npm run watch:gateway & npm run watch:engine & npm run watch:workers & npm run watch:learner & npm run watch:model-store & npm run watch:task-manager & npm run watch:game-handler & npm run watch:logger & npm run watch:auth & npm run watch:game-client",
     "postinstall": "git submodule update --init && git submodule foreach npm i",
     "update-submodules": "git submodule foreach --recursive git pull origin master",
     "install-submodules": "git submodule foreach --recursive npm ci",
@@ -30,7 +30,9 @@
     "start:learner": "cd ./chss-service-learner && npm start",
     "watch:learner": "cd ./chss-service-learner && npm run dev",
     "start:workers": "cd ./chss-service-workers && npm start",
-    "watch:workers": "cd ./chss-service-workers && npm run dev"
+    "watch:workers": "cd ./chss-service-workers && npm run dev",
+    "start:engine": "cd ./chss-service-engine && npm start",
+    "watch:engine": "cd ./chss-service-engine && npm run dev"
   },
   "repository": {
     "type": "git",
