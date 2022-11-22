@@ -67,3 +67,7 @@ sharedproject="${PWD}/chss-module-logger"
   project="${PWD}/chss-app-game-client"
   rm -rf "${project}/chss-module-logger"
   ln -s -- "$sharedproject" "$project"
+
+  project="${PWD}/chss-service-workers"
+  rm -rf "${project}/chss-module-logger"
+  ln -s -- "$sharedproject" "$project"
